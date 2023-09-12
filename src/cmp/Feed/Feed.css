@@ -50,7 +50,7 @@
 .feedFormIcon-options{
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -64,4 +64,80 @@
     margin-left: 5px;
 }
 
+
+/* Feed Posts css */
+
+.feed-posts{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1.5px solid #ddd;
+    padding: 10px;
+}
+
+.feedPosts-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feedPostsHeader-left{
+    display: flex;
+    align-items: center;
+}
+
+.feedPostsHeader-left .MuiAvatar-root{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.feedPostsHeader-left span b{
+    font-size: 14px;
+}
+
+.feedPostsHeader-left span{
+    font-size: 13px;
+}
+
+.feedPostsHeader-right svg{
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.feedPosts-body{
+    padding: 40px 0px;
+    font-size: 13px;
+    border-bottom: 1px solid #ccc;
+}
+
+.feedPosts-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.feedPostsFooter-options{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.feedPostsFooter-options:hover{
+    background-color: #EEEEEE;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedPostsFooter-options svg{
+    font-size: 23px;
+}
+
+.feedPostsFooter-options span{
+    font-size: 13px;
+    margin-left: 5px;
+}
 
