@@ -1,0 +1,100 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    color: #565656;
+}
+
+/* Sidebar profile css */
+
+.sidebar-profile{
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1.5px solid #ddd;
+    overflow: hidden;
+}
+
+.sidebar-profile img{
+    width: 100%;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.sidebarProfile-intro{
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebarProfile-intro .MuiAvatar-root{
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+.sidebarProfile-intro h4{
+    margin: 0;
+}
+
+.sidebarProfile-intro span{
+    font-size: 13px;
+}
+
+.sidebarProfile-details{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.sidebarProfileDetails-option{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Sidebar Recent css */
+
+.sidebar-recent{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1.5px solid #ddd;
+    overflow: hidden;
+}
+
+.sidebar-recent h4{
+    font-size: 13px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.sidebarRecent-options{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: center;
+}
+
+.sidebarRecent-options span{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.sidebarRecent-options span b{
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 5px;
+}
+

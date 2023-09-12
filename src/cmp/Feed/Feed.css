@@ -1,0 +1,67 @@
+.feed{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    color: #565656;
+}
+
+/* Feed form css */
+
+.feedForm{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1.5px solid #ddd;
+}
+
+.feedForm-header{
+    display: flex;
+    align-items: center;
+}
+
+.feedForm form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.feedForm-header form input[type='submit']{
+    display: none;
+}
+
+.feedForm-header form input[type='text']{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: 0;
+    border-radius: 50px;
+    padding: 15px 10px;
+}
+
+.feedForm-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.feedFormIcon-options{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedFormIcon-options:hover{
+    background-color: #EEEEEE;
+}
+
+.feedFormIcon-options span{
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+

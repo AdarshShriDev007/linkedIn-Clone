@@ -1,0 +1,103 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 50px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 2px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+    padding-left: 15%;
+}
+
+.header-left img{
+    width: 32px;
+}
+
+.header-left .search-box{
+    display: flex;
+    align-items: center;
+    background-color: #EEF3F8;
+    width: 260px;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+.header-left .search-box input{
+    background-color: transparent;
+    width: 100%;
+    padding: 8px 0px;
+    border: 0;
+    outline: 0;
+}
+
+.search-box svg{
+    font-size: 20px;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    padding-right: 15%;
+}
+
+.header-right .options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+.options{
+    position: relative;
+    color: #565656;
+}
+
+.options svg{
+    font-size: 25px;
+}
+
+.options span{
+    font-size: 12px;
+}
+
+.options .avatar-option-dropdown{
+    display: flex;
+    align-items: center;
+    margin-top: -4px;
+}
+
+.options .MuiAvatar-root{
+    width: 23px;
+    height: 23px;
+    margin-top: 6px;
+}
+
+.options:hover{
+    cursor: pointer;
+    color: #000;
+}
+
+.options:first-child{
+    color: #000;
+}
+
+.options:first-child::before{
+    content: '';
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    background-color: #333;
+    height: 2px;
+    bottom: -7px;
+}
