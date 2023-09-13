@@ -72,16 +72,9 @@
     font-size: 12px;
 }
 
-.options .avatar-option-dropdown{
-    display: flex;
-    align-items: center;
-    margin-top: -4px;
-}
-
 .options .MuiAvatar-root{
     width: 23px;
     height: 23px;
-    margin-top: 6px;
 }
 
 .options:hover{

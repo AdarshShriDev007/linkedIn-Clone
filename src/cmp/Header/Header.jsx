@@ -6,12 +6,12 @@ import {
     People,
     BusinessCenter,
     Message,
-    Notifications,
-    ArrowDropDown
+    Notifications
 } from "@mui/icons-material";
 import { Avatar } from "@mui/material";
 import {useSelector} from "react-redux";
 import {selectedUser} from "../../features/userSlice";
+import {auth, signOut} from "../../firebase";
 
 function Header() {
 
@@ -48,13 +48,9 @@ function Header() {
                 <Notifications />
                 <span>Notifications</span>
             </div>
-            <div className='options'>
+            <div className='options' onClick={()=>signOut(auth)}>
                 <Avatar src={user.photoURL} />
-                <div className='avatar-option-dropdown'>
-                    <span>Me </span>
-                    <ArrowDropDown />
-                </div>
-                
+                <span>Logout</span>   
             </div>
         </div>
     </div>

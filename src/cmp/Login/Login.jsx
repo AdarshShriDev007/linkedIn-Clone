@@ -7,7 +7,7 @@ import { login } from "../../features/userSlice";
 function Login() {
 
     const dispatch = useDispatch();
-    const [signUp,setSignUp] = useState(true);
+    const [signUp,setSignUp] = useState(false);
     const [name, setName] = useState("");
     const [photoURL,setPhotoURL] = useState("");
     const [email,setEmail] = useState("");
