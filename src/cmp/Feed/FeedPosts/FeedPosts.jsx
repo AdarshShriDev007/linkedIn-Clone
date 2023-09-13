@@ -14,7 +14,7 @@ const FeedPosts = forwardRef(({name,desc,message,photoURL},ref)=> {
         <div className='feedPosts-header'>
             <div className='feedPostsHeader-left'>
                 <Avatar src={photoURL} />
-                <span><b>{name}</b><br />{desc}</span>
+                <span><b style={{fontWeight:"600"}}>{name}</b><br />{desc}</span>
             </div>
             <div className='feedPostsHeader-right'>
                 <MoreVert />
