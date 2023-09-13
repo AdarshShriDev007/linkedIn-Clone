@@ -70,6 +70,8 @@
     padding: 10px;
     border: 1.5px solid #ddd;
     overflow: hidden;
+    position: sticky;
+    top: 75px;
 }
 
 .sidebar-recent h4{

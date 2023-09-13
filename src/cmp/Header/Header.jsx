@@ -10,8 +10,13 @@ import {
     ArrowDropDown
 } from "@mui/icons-material";
 import { Avatar } from "@mui/material";
+import {useSelector} from "react-redux";
+import {selectedUser} from "../../features/userSlice";
 
 function Header() {
+
+    const user = useSelector(selectedUser);
+
   return (
     <div className='header'>
         <div className='header-left'>
@@ -44,7 +49,7 @@ function Header() {
                 <span>Notifications</span>
             </div>
             <div className='options'>
-                <Avatar />
+                <Avatar src={user.photoURL} />
                 <div className='avatar-option-dropdown'>
                     <span>Me </span>
                     <ArrowDropDown />

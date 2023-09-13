@@ -14,9 +14,9 @@ code {
 }
 
 .app-grid{
-  padding: 0px 15%;
+  padding: 0px 10%;
   display: grid;
-  grid-template-columns: 20% auto 25%;
+  grid-template-columns: auto auto auto;
 }
 
 

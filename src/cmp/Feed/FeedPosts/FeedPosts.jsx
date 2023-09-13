@@ -1,5 +1,5 @@
 import { Avatar } from '@mui/material';
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { 
     MoreVert,
     ThumbUpOffAlt,
@@ -8,13 +8,13 @@ import {
     SendOutlined,
  } from "@mui/icons-material";
 
-function FeedPosts() {
+const FeedPosts = forwardRef(({name,desc,message,photoURL},ref)=> {
   return (
-    <div className='feed-posts'>
+    <div className='feed-posts' ref={ref}>
         <div className='feedPosts-header'>
             <div className='feedPostsHeader-left'>
-                <Avatar />
-                <span><b>Adarsh Kumar</b><br />this is description</span>
+                <Avatar src={photoURL} />
+                <span><b>{name}</b><br />{desc}</span>
             </div>
             <div className='feedPostsHeader-right'>
                 <MoreVert />
@@ -22,7 +22,7 @@ function FeedPosts() {
         </div>
 
         <div className='feedPosts-body'>
-            <span>This is body posts</span>
+            <span>{message}</span>
         </div>
 
         <div className='feedPosts-footer'>
@@ -45,6 +45,6 @@ function FeedPosts() {
         </div>
     </div>
   )
-}
+})
 
 export default FeedPosts;

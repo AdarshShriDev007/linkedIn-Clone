@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Avatar } from "@mui/material";
 import {
     Photo,
@@ -6,14 +6,41 @@ import {
     Today,
     Assignment
 } from "@mui/icons-material";
+import { db, collection, addDoc } from "../../../firebase";
+import { useSelector } from "react-redux";
+import { selectedUser } from "../../../features/userSlice";
 
 function FeedForm() {
+
+    const [input,setInput] = useState("");
+    const user = useSelector(selectedUser);
+
+    const storePost = async (e)=>{
+        e.preventDefault();
+        if(input)
+        {
+            try{
+                await addDoc(collection(db, "posts"),{
+                    name : user.displayName,
+                    photoURL : user.photoURL,
+                    desc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                    message : input,
+                    timestamp : new Date()
+                })
+                setInput("");
+            }
+            catch(e){
+                console.error(e);
+            }
+        }
+    }
+
   return (
     <div className='feedForm'>
         <div className='feedForm-header'>
-            <Avatar />
-            <form>
-                <input type='text' placeholder='Start a post' />
+            <Avatar src={user.photoURL} />
+            <form onSubmit={storePost}>
+                <input type='text' placeholder='Start a post' value={input} onChange={(e)=>setInput(e.target.value)} />
                 <input type='submit' value="submit" />
             </form>
         </div>
